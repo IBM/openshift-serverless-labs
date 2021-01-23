@@ -105,7 +105,7 @@ Because Knative is built on top of Kubernetes, we can access all of these resour
 
 4. When creating your Service, some other objects were created in Kubernetes as well, such as Routes or Revisions. Let's check out the Route.
 
-    ``
+    ```
     oc get routes.serving.knative.dev fib-knative -o yaml
     ```
 
