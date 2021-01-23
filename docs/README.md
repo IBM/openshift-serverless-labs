@@ -9,11 +9,11 @@ Red Hat OpenShift Serverless can be used to build, deploy and run event-driven a
 
 ## Labs
 
-1. Setup,
-2. Deploy our First Application to Knative using the Knative Client (kn),
-3. Deploy vnext Version and Apply Traffic Shifting,
-4. Tag revisions to generate custom app URLs,
-5. Knative from the Kubernetes Layer
+1. [Setup](setup.md),
+2. [Deploy our First Application to Knative using the Knative Client (kn)](lab1.md),
+3. [Deploy vnext Version and Apply Traffic Shifting](lab2.md),
+4. [Tag revisions to generate custom app URLs](lab3.md),
+5. [Knative from the Kubernetes Layer](lab4.md)
 
 ## Technologies
 
