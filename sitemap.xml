@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/setup/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/lab1/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/lab2/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/lab3/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ibm.github.io/openshift-serverless-labs/lab4/</loc>
+     <lastmod>2021-01-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
