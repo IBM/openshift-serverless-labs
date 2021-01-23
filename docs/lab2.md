@@ -7,14 +7,14 @@ Did you notice that the Fibonacci sequence started with 1? Many would argue that
 ## Update First Revision Name
 1. When we first deployed our application, we didn't provide a revision name, so Knative assigned a random revision name, something like `fib-knative-lhghx-1`. Let's give the service the revision name `fib-knative-one` since in this version of the application the sequence begins with one. Naming our own revisions can be helpful for readability, but it isn't required. We'll later use this revision name to route traffic between two different revisions.
 
-    ```bash
+    ```
     kn service update fib-knative --revision-name fib-knative-one
     ```
 
 ## Deploy vnext
 1. Let's deploy the next version of our application, where the Fibonacci sequence begins with 0. We will again deploy from a docker image on dockerhub.
 
-    ```bash
+    ```
      kn service update fib-knative --image docker.io/ibmcom/fib-knative:vnext --revision-name fib-knative-zero
     ```
 
@@ -22,12 +22,12 @@ Did you notice that the Fibonacci sequence started with 1? Many would argue that
 
 2. Let's see the details for our Service, again using `kn service describe`
 
-    ```bash
+    ```
     kn service describe fib-knative
     ```
 
     Example output:
-    ```bash
+    ```
     Name:       fib-knative
     Namespace:  default
     Age:        1m
@@ -53,7 +53,7 @@ Did you notice that the Fibonacci sequence started with 1? Many would argue that
     ```
 
     Expected Output:
-    ```bash
+    ```
     [0, 1, 1, 2, 3]
     ```
 
@@ -66,12 +66,12 @@ Did you notice that the Fibonacci sequence started with 1? Many would argue that
 
 5. Again, we can use `kn service describe` to see these changes. Notice the `Revisions` section. You can see that 10% of the traffic will be sent to `fib-knative-zero`, and 90% of the traffic will be sent to `fib-knative-one`.
 
-    ```bash
+    ```
     kn service describe fib-knative
     ```
 
     Expected Output:
-    ```bash
+    ```
     Revisions:  
       10%  fib-knative-zero (current @latest) [2] (58m)
             Image:  docker.io/ibmcom/fib-knative:vnext (pinned to c13569)
@@ -86,7 +86,7 @@ Did you notice that the Fibonacci sequence started with 1? Many would argue that
 	```
 
     Expected Output:
-    ```bash
+    ```
     [1][1][0][1][1][1][1][1][1][1][1]
     ```
 

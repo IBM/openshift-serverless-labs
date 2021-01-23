@@ -12,10 +12,20 @@
 
 4. Copy the contents of the field **Log in with this token** to the clipboard. It provides a login command with a valid token for your username.
 
-5. In a separate browser tab go to the IBM Cloud URL [https://cloud.ibm.com] (https://cloud.ibm.com) and log in with your ibm.com credentials.
+5. In a separate browser tab go to the IBM Cloud URL [https://cloud.ibm.com](https://cloud.ibm.com) and log in with your ibm.com credentials.
 
 6. Click the icon for the IBM Cloud Shell terminal to launch it
 
   ![IBM Cloud Shell](images/cloudshell.png)
 
 7. Paste the *oc login* command in the IBM Cloud Shell terminal and run it
+
+  ![Login command](images/login-command.png)
+
+## Create an OpenShift project for the labs
+
+1. Run the following command to create a project for the labs
+
+   ```
+   oc new-project knlabs
+   ```

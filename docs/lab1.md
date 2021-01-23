@@ -8,13 +8,13 @@ We've already created an image on dockerhub that contains the first version of o
 
 1. Deploy the application. We will create a Knative Service named fib-knative which will run our fib-knative image on dockerhub.  Run the following command in the IBM Cloud Shell terminal.
 
-    ```bash
+    ```
     kn service create fib-knative --image docker.io/ibmcom/fib-knative
     ```
 
 2. You should see some output indicating that the service was created. You should also be given the URL where your application will be available. It should look something like `http://fib-knative.default.bmv-knative-lab.us-south.containers.appdomain.cloud`.
 
-    ```bash
+    ```
     Creating service 'fib-knative' in namespace 'default':
 
     0.316s The Route is still working to reflect the latest desired specification.
@@ -37,7 +37,7 @@ We've already created an image on dockerhub that contains the first version of o
 
 4. Let's take a look at some details about the service we just created using the `kn service describe` command.
 
-    ```bash
+    ```
     kn service describe fib-knative
     ```
 
@@ -68,7 +68,7 @@ We've already created an image on dockerhub that contains the first version of o
     ```
 
     Expected Output:
-    ```bash
+    ```
     [1,1,2,3,5]
     ```
 

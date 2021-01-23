@@ -32,24 +32,24 @@ Because Knative is built on top of Kubernetes, we can access all of these resour
 
 2. We can also view some details about the Configuration for our Service. Every Service has a Configuration and a Route -- each time a Configuration is updated, a new Revision is created. Let's see a list of Configurations, first.
 
-    ```bash
+    ```
     oc get configuration
     ```
 
     Example Output:
-    ```bash
+    ```
     NAME                LATESTCREATED             LATESTREADY               READY   REASON
     fib-knative         fib-knative-zero          fib-knative-zero          True    
     ```
 
 3. Next, let's see some of the details of the fib-knative Configuration.    
 
-    ```bash
+    ```
     oc get configuration fib-knative --output yaml
     ```
 
     Example Output:
-    ```bash
+    ```yaml
     apiVersion: serving.knative.dev/v1
     kind: Configuration
     metadata:
@@ -105,12 +105,12 @@ Because Knative is built on top of Kubernetes, we can access all of these resour
 
 4. When creating your Service, some other objects were created in Kubernetes as well, such as Routes or Revisions. Let's check out the Route.
 
-    ```bash
+    ```
     oc get route fib-knative -o yaml
     ```
 
     Example Output:
-    ```bash
+    ```yaml
     ...
       traffic:
       - latestRevision: false
@@ -148,4 +148,4 @@ Because Knative is built on top of Kubernetes, we can access all of these resour
     kn service delete fib-knative
     ```
 
-Congratulations!  You have had a quick overview of deploying applications to Knative using the `kn` CLI as well as using `oc` to do some advanced debugging and exploration. 
+Congratulations!  You have had a quick overview of deploying applications to Knative using the `kn` CLI as well as using `oc` to do some advanced debugging and exploration.

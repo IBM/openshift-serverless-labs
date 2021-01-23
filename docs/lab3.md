@@ -5,7 +5,7 @@ What if we wanted to create URLs that are specific for each of the two revisions
 ## Tag revisions
 1. Let's tag both of our revisions. We'll tag `fib-knative-zero` as `zero`, and `fib-knative-one` as `one`.
 
-    ```bash
+    ```
     kn service update fib-knative --tag fib-knative-zero=zero --tag fib-knative-one=one
     ```
 
@@ -16,7 +16,7 @@ What if we wanted to create URLs that are specific for each of the two revisions
     ```
 
     Your old URL will look something like this:
-    ```bash
+    ```
     http://fib-knative-default.bmv-dev-16-5290c8c8e5797924dc1ad5d1b85b37c0-0000.us-south.containers.appdomain.cloud
     ```
 
@@ -37,7 +37,7 @@ What if we wanted to create URLs that are specific for each of the two revisions
     ```
 
     Example output:
-    ```bash
+    ```
     [0,1,1,2]
     ```
 
@@ -47,9 +47,9 @@ What if we wanted to create URLs that are specific for each of the two revisions
     ```
 
     Example output:
-    ```bash
+    ```
     [1,1,2,3]
     ```
 
 
-Congratulations! You've tagged each revision of your fib-knative application resulting in customized URLs for each version of our application. 
+Congratulations! You've tagged each revision of your fib-knative application resulting in customized URLs for each version of our application.
