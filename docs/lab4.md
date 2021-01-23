@@ -124,7 +124,7 @@ Because Knative is built on top of Kubernetes, we can access all of these resour
         tag: one
         url: http://one-fib-knative-default.bmv-dev-16-5290c8c8e5797924dc1ad5d1b85b37c0-0000.us-south.containers.appdomain.cloud
       url: http://fib-knative-default.bmv-dev-16-5290c8c8e5797924dc1ad5d1b85b37c0-0000.us-south.containers.appdomain.cloud
-      ```
+    ```
 
       In the `traffic` section you can see the two URLs that were created when we tagged the revisions, as well as the percentage of traffic going to each Revision.
 
